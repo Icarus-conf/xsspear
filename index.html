@@ -10,32 +10,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="bg">
-
   <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-    <div class="container"><a href="#" class="navbar-brand"> <b>XSSpear</b></a>
+    <div class="container">
+      <a class="navbar-brand" href="#">XSSpear</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id="navbarSupportedContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a href="#" tabindex="-1" aria-disabled="true" class="nav-link disabled">Disabled</a></li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <span class="navbar-nav me-auto mb-2 mb-lg-0">
+        </span>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginInModal">
+          Login In
+        </button>
+      
       </div>
     </div>
   </nav>
+
+
+
+
   <!-- End -->
   
   
@@ -51,11 +45,12 @@
           <h1 class="display-1">XSSpear</h1>
           <p class="lead mb-0">a <code>Python 3.1</code> based reflective cross-site scripting detection tool </p>
           <p class="lead">with <code>100%</code> valid results.</p>
-          <button id="book" class="btn-1 btn--white btn-1--animated mt-3" data-toggle="modal" data-target="#bookingModal">Register Now</button>
+          <button id="book" class="btn-1 btn--white btn-1--animated mt-3" data-bs-toggle="modal" data-bs-target="#signUpModal">Register Now</button>
         </div>
       </div>
     </div>
   </div>
+
   <!-- End -->
   <section id="section-1" class="py-5">
     <div class="container py-5">
@@ -67,6 +62,139 @@
       </div>
     </div>
   </section>
+
+  <section id="section2">
+    <div class="container text-center mt-5 mb-5">
+      <h2 class="font-weight-bold pb-5">What should you do?</h2>
+      <div class="row m-2">
+        <div class="col-md-4 p-5">
+          <img src="img/copyPaste-icon.png" width="150px" alt="" class="img-fluid d-none d-md-inline">
+          <h3>Copy/Paste</h3>
+          <p class="lead">Copy and paste <code>url/subdomain</code> you want to make your scan.</p>
+        </div>
+
+        <div class="col-md-4 p-5">
+          <img src="img/scan-icon.png" width="150px" alt="" class="img-fluid d-none d-md-inline">
+          <h3>Start Scan</h3>
+          <p class="lead">Start the scan by clicking on scan button</p>
+        </div>
+
+        <div class="col-md-4 p-5">
+          <img src="img/waiting-icon.png" width="150px" alt="" class="img-fluid d-none d-md-inline">
+          <h3>Wait for results</h3>
+          <p class="lead">Wait a momemnt until our tool to ge results for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer" class="p-3">
+    <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+      <li class="nav-item">
+        <a href="" class="nav-link text-white">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link text-white">Explore</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link text-white">Contact</a>
+      </li>
+      <li class="nav-item">
+      <a href="https://www.buymeacoffee.com/aszraf"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=aszraf&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" class="img-coffee"/></a>
+    </li>
+    </ul>
+  </section>
+
+
+ <!-- Modal for sign in-->
+ <div class="modal fade" id="loginInModal" tabindex="-1" role="dialog" aria-labelledby="loginInModalLabel" aria-hidden="true">
+  <div class="modal-dialog d-flex justify-content-center">
+    <div class="modal-content w-75">
+        <div class="modal-header">
+            <h5 class="modal-title" id="loginInModal">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+            <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="email2" class="form-control" />
+                    <label class="form-label" for="email2">Email address</label>
+                </div>
+
+                <!-- password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="password2" class="form-control" />
+                    <label class="form-label" for="password2">Password</label>
+                </div>
+        
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Login In</button>
+                </div>
+                <div class="modal-footer">
+                <span>
+                  Don't have account?
+                  <a href="" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a>
+                 </span>
+                 
+                </div> 
+        </div>
+    </div>
+</div>
+</div>
+
+  
+<!-- Modal -->
+
+
+  <!-- Modal for sign up-->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog d-flex justify-content-center">
+    <div class="modal-content w-75">
+        <div class="modal-header">
+            <h5 class="modal-title" id="signUpModal">Sign up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+            <form>
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="name2" class="form-control" />
+                    <label class="form-label" for="name2">Name</label>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="email2" class="form-control" />
+                    <label class="form-label" for="email2">Email address</label>
+                </div>
+
+                <!-- password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="password2" class="form-control" />
+                    <label class="form-label" for="password2">Password</label>
+                </div>
+
+                <div class="form-check pb-3">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Agree to our terms.
+                  </label>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+  
+<!-- Modal -->
 
 </body>
 </html>
