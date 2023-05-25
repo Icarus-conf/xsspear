@@ -1,3 +1,8 @@
+.navbar-brand{
+  font-weight: bold;
+  color: #34626c;
+}
+
 .video-background-holder {
   position: relative;
   background-color: black;
@@ -109,3 +114,25 @@ code {
   height: 100;
   width: 100%;
 }
+
+#footer {
+  background: #000;
+  font-weight: 100; }
+
+  #section2 {
+    height: 90vh;
+    background: #ebebeb;
+    padding: 40px 30px; }
+
+    .section-container {
+     padding-top: 159px;
+    }
+
+    .img-coffee {
+      width: 160px;
+    }
+.form-select {
+  width: 100px;
+  margin-right: 5px;
+}
+
