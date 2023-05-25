@@ -1,285 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
-    <script src="https://kit.fontawesome.com/8a662c2e09.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>XSSpear</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <a href="#" class="navbar-brand">
-        <h3 class="mb-0">pizzaME</h3>
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">XSSpear</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#showcase" class="nav-link">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#section2" class="nav-link">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#section3" class="nav-link">Explore</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#news" class="nav-link">Contact</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link" data-toggle="modal" data-target="#bookingModal">Buy now!</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <span class="navbar-nav me-auto mb-2 mb-lg-0">
+        </span>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginInModal">
+          Login In
+        </button>
+      
       </div>
-    </nav>
+    </div>
+  </nav>
 
 
 
-    <section id="showcase" class="d-flex justify-content-center align-items-center">
-      <div id="overlay"></div>
-      <div id="header" class="container text-white text-center">
-        <h3 class="display-5">One tap for pizza</h3>
-        <h1 class="display-1">PizzaME</h1>
-        <p class="lead d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, magni.</p>
-        <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">Order now!</button> 
-      </div>
-    </section>
 
-    <section id="jumbotron">
-      <div class="jumbotron jumbotron-fluid mb-0">
-        <video autoplay muted loop poster="https://dummyimage.com/900x400/000/fff">
-         <source src="img/video.mp4" type="video/mp4">
-      </video>
-        <div class="container text-white">
-          <h1 class="display-5 font-weight-bold">Order now and get a discount <span class="badge badge-secondary text-white">25%</span></h1>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa minima mollitia aliquam quam labore!</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
-
-      </section>
-
-    <section id="section2">
-      <div class="container text-center mt-5">
-        <h2 class="font-weight-bold">What we offer for you</h2>
-        <div class="row m-2">
-          <div class="col-md-4 p-3">
-            <img src="img/delivery.png" alt="" class="img-fluid d-none d-md-inline">
-            <h3>Fast Delivry</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor autem nobis minima soluta unde.</p>
-          </div>
-
-          <div class="col-md-4 p-3">
-            <img src="img/pizza-truck.png" alt="" class="img-fluid d-none d-md-inline"">
-            <h3>Safe Delivry</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor autem nobis minima soluta unde.</p>
-          </div>
-
-          <div class="col-md-4 p-3">
-            <img src="img/pizza.png" alt="" class="img-fluid d-none d-md-inline"">
-            <h3>Hot pizza</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor autem nobis minima soluta unde.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="section3">
-      <div class="container text-center mt-2 p-3">
-        <h3 class="diplay-4 font-weight-bold mb-5">Order now!</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/card-img-1.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                <h2 class="card-title text-primray">Pizza 1</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor.</p>
-                <a href="" class="btn btn-lg btn-outline-primary text-dark" data-toggle="modal" data-target="#bookingModal">Order</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/card-img-2.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                <h2 class="card-title text-primray">Pizza 2</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor.</p>
-                <a href="" class="btn btn-lg btn-outline-primary text-dark" data-toggle="modal" data-target="#bookingModal">Order</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/card-img-3.jpg" alt="" class="card-img-top">
-              <div class="card-body">
-                <h2 class="card-title text-primray">Pizza 3</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor.</p>
-                <a href="" class="btn btn-lg btn-outline-primary text-dark" data-toggle="modal" data-target="#bookingModal">Order</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="quotes">
-      <div class="container text-white text-center mt-5">
-        <h3 class="diplay-4 font-weight-bold mb-5 text-secondary ">What our clients say about us</h3>
-
-
-        <div class="container">
-          <div id="carouselContent" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active text-center p-4">
-                       
-        <i class="fas fa-quote-left fa-2x text-secondary mb-3"></i>
-        <blackquote class="blackqoute">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vel!</p>
-          <footer class="blockquote-footer text-secondary">Mark Twin</footer>
-        </blackquote>
-                  </div>
-                  <div class="carousel-item text-center p-4">
-                      
-                    <i class="fas fa-quote-left fa-2x text-secondary mb-3"></i>
-                    <blackquote class="blackqoute">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vel!</p>
-                      <footer class="blockquote-footer text-secondary">Amy Winehouse</footer>
-                    </blackquote>
-                  </div>
-
-                  <div class="carousel-item text-center p-4">
-                      
+  <!-- End -->
   
-        <i class="fas fa-quote-left fa-2x text-secondary mb-3"></i>
-        <blackquote class="blackqoute">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vel!</p>
-          <footer class="blockquote-footer text-secondary">Jessica Goldman</footer>
-        </blackquote>
-                  </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
-          </div>
-      </div>
-      </div>
- 
-    </section>
-
-
-    <section id="news">
-      <div class="container text-dark  text-center py-5">
-        <p class="lead font-weight-bold ">JOIN OUR NEWSLETTER FOR OFFERS AND UPDATES</p>
-        <div class="row justify-content-center">
-        <div class="col-10 col-sm-8 col-md-6 col-lg-4">
-          <form action="" class="form-inline mt-3">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Your Email" name="" id="">
-              <div class="input-group-append">
-                <button class="btn btn-secondary">Join now!</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      </div>
-    </section>
-
-
-    <section id="footer" class="p-3">
-      <ul class="nav text-center justify-content-center flex-column flex-sm-row">
-        <li class="nav-item">
-          <a href="" class="nav-link text-white">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link text-white">Explore</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link text-white">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link text-white" data-toggle="modal" data-target="#bookingModal">Order now</a>
-        </li>
-
-      </ul>
-    </section>
-
-    <div class="modal" id="bookingModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Please fill out the form below</p>
-            <form action="">
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-              </div>
-              <div class="form-group">
-                <label for="address">Your Address</label>
-                <input type="text" class="form-control" id="address" placeholder="Type your full address">
-              </div>
-              <div class="form-group">
-                <label for="manyPizza">How many pizza do u want</label>
-                <select class="form-control" name="" id="manyPizza">
-                  <option value="1">1</option>
-                  <option value="1">2</option>
-                  <option value="1">3</option>
-                  <option value="1">4</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="kindOfPizza">What kind of pizza do u want</label>
-                <select class="form-control" name="" id="kindOfPizza">
-                  <option value="1">Cheese Pizza</option>
-                  <option value="2">Veggie Pizza</option>
-                  <option value="3">Pepperoni Pizza</option>
-                  <option value="4">Meat Pizza</option>
-                  <option value="5">Margherita Pizza</option>
-                  <option value="5">BBQ Chicken Pizza</option>
-                  <option value="5">Buffalo Pizza</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="requests">Additional Requests</label>
-                <textarea id="requests" rows="3" class="form-control"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit Request</button>
-          </div>
+  
+  <!-- Background video -->
+  <div class="video-background-holder">
+    <div class="video-background-overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="img/bg-1.mp4" type="video/mp4">
+      </video>
+    <div class="video-background-content container h-100">
+      <div class="d-flex h-100 align-items-start m-5">
+        <div class="w-100 text-white">
+          <h1 class="display-1">XSSpear</h1>
+          <p class="lead mb-0">a <code>Python 3.1</code> based reflective cross-site scripting detection tool </p>
+          <p class="lead">with <code>100%</code> valid results.</p>
+          <button id="book" class="btn-1 btn--white btn-1--animated mt-3" data-bs-toggle="modal" data-bs-target="#signUpModal">Register Now</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- End -->
+  <section id="section-1" class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="display-4">Description:</h1>
+          <p class="lead"><code>Python 3.1-based</code> reflective cross-site scripting detection tool, a powerful tool for quickly and accurately identifying <code>.XSS vulnerabilities</code> in single target URLs or Subdomains by detecting only reflections of special characters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <section id="section2">
+    <div class="container text-center mt-5 mb-5">
+      <h2 class="font-weight-bold pb-5">What should you do?</h2>
+      <div class="row m-2">
+        <div class="col-md-4 p-5">
+          <img src="img/copyPaste-icon.png" width="150px" alt="" class="img-fluid d-none d-md-inline">
+          <h3>Copy/Paste</h3>
+          <p class="lead">Copy and paste <code>url/subdomain</code> you want to make your scan.</p>
+        </div>
 
-  </body>
+        <div class="col-md-4 p-5">
+          <img src="img/scan-icon.png" width="150px" alt="" class="img-fluid d-none d-md-inline">
+          <h3>Start Scan</h3>
+          <p class="lead">Start the scan by clicking on scan button</p>
+        </div>
+
+        <div class="col-md-4 p-5">
+          <img src="img/waiting-icon.png" width="150px" alt="" class="img-fluid d-none d-md-inline">
+          <h3>Wait for results</h3>
+          <p class="lead">Wait a momemnt until our tool to ge results for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer" class="p-3">
+    <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+      <li class="nav-item">
+        <a href="" class="nav-link text-white">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link text-white">Explore</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link text-white">Contact</a>
+      </li>
+      <li class="nav-item">
+      <a href="https://www.buymeacoffee.com/aszraf"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=aszraf&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" class="img-coffee"/></a>
+    </li>
+    </ul>
+  </section>
+
+
+ <!-- Modal for sign in-->
+ <div class="modal fade" id="loginInModal" tabindex="-1" role="dialog" aria-labelledby="loginInModalLabel" aria-hidden="true">
+  <div class="modal-dialog d-flex justify-content-center">
+    <div class="modal-content w-75">
+        <div class="modal-header">
+            <h5 class="modal-title" id="loginInModal">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+            <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="email2" class="form-control" />
+                    <label class="form-label" for="email2">Email address</label>
+                </div>
+
+                <!-- password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="password2" class="form-control" />
+                    <label class="form-label" for="password2">Password</label>
+                </div>
+        
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Login In</button>
+                </div>
+                <div class="modal-footer">
+                <span>
+                  Don't have account?
+                  <a href="" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a>
+                 </span>
+                 
+                </div> 
+        </div>
+    </div>
+</div>
+</div>
+
+  
+<!-- Modal -->
+
+
+  <!-- Modal for sign up-->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog d-flex justify-content-center">
+    <div class="modal-content w-75">
+        <div class="modal-header">
+            <h5 class="modal-title" id="signUpModal">Sign up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+            <form>
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                    <input type="text" id="name2" class="form-control" />
+                    <label class="form-label" for="name2">Name</label>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="email2" class="form-control" />
+                    <label class="form-label" for="email2">Email address</label>
+                </div>
+
+                <!-- password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="password2" class="form-control" />
+                    <label class="form-label" for="password2">Password</label>
+                </div>
+
+                <div class="form-check pb-3">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Agree to our terms.
+                  </label>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+  
+<!-- Modal -->
+
+</body>
 </html>
